@@ -1,5 +1,5 @@
 # Haskell
- Course literature
+ 
 
 The course outline mainly follows the online e-book/tutorial Learn you a Haskell for Great Good, but there will be some additional topics related to the functional programming paradigm in general.
 Teaching videos
