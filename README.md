@@ -2,9 +2,6 @@
  
 
 The course outline mainly follows the online e-book/tutorial Learn you a Haskell for Great Good, but there will be some additional topics related to the functional programming paradigm in general.
-Teaching videos
-
-For most of the topics on this course, teaching videos will be published under course weeks as the course progresses. Some of these videos cover the same topics as the textbook (and are meant the clarify the topic or bring more depth to it), some videos are about more general functional programming topics not in the textbook.
 
     Week 1 : The Functional Programming Paradigm (not in textbook)
 
