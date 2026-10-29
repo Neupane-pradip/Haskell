@@ -1,69 +1,52 @@
-# Haskell
- 
+# Haskell and Functional Programming
 
-The course outline mainly follows the online e-book/tutorial Learn you a Haskell for Great Good, but there will be some additional topics related to the functional programming paradigm in general.
+Weekly functional programming exercises in Haskell, covering list comprehensions, functions, recursion, and custom data types.
 
-    Week 1 : The Functional Programming Paradigm (not in textbook)
+## Repository guide
 
-    Week 1 : Introduction to Haskell
+| Folder | Examples |
+|---|---|
+| [Week 2](Week%202/) | Manhattan-distance points, heart-rate calculation, and strings |
+| [week 3](week%203/) | Credits, character pairs, and distance filtering |
+| [week4](week4/)–[week7](week7/) | Further weekly function and data-processing exercises |
+| [week8](week8/) | Phone-related data types and clustering exercises |
 
-    Week 2 : Basic Haskell syntax
+The folders retain their original names and capitalization.
 
-    Week 2 : Loops in Haskell, list comprehensions
+## Try an exercise
 
-    Week 3 : Why paradigm shift now? (topic not in textbook)
+Install GHC and its interactive interpreter, GHCi. From the repository root:
 
-    Week 3 : Pattern matching 1: Piecewise functions and guards
+```sh
+ghci "Week 2/manhattan-distance.hs"
+```
 
-    Week 3 : Pattern matching 2: More pattern matching, deconstruction
+At the GHCi prompt:
 
-    Week 4 : Haskell local variables and functions
+```haskell
+points 1
+-- [(-1,0),(0,-1),(0,0),(0,1),(1,0)]
+:quit
+```
 
-    Week 4 : Recursion (in functional programming) (some topics not in textbook)
+This function returns the integer coordinate pairs whose Manhattan distance from the origin is at most the supplied value.
 
-    Week 5 : Functions vs. variables: unification (topic not in textbook)
+For the phone-type exercise:
 
-    Week 5 : Functions and 1st class citizens and currying
+```sh
+ghci week8/PhoneType.hs
+```
 
-    Week 6 : More on functions as 1st class citizens
+```haskell
+Phone PrivateMobile (toCountryCode 358) (toPhoneNo 1234567)
+```
 
-    Week 6 : Introduction to laziness
+## How the repository is organized
 
-    Week 7 : Folds: more loops in functional programming
+Load individual source files to explore their definitions. There is no shared Cabal or Stack project and no repository-wide test runner. Many files define functions without a `main` entry point, so GHCi is the most direct way to use them.
 
-    Week 7 : Debugging functional programs (not in textbook)
+Some compiled `.hi` and `.o` files are included in this historical snapshot. The `.hs` files are the source material.
 
-    Week 8 : Writing new types in Haskell
+## Course context
 
-    Week 8 : More on writing new types in Haskell
-
-    Week 8 : Simple new types in Haskell
-
-    Week 9 : Optional values with Maybe and Either
-
-    Week 9 : Introduction to typeclasses
-
-    Week 10 : Laziness and “pipelines” (not in textbook)
-
-    Week 10 : More on typeclasses
-
-    Week 11 : Basic input and output in Haskell
-
-    Week 11 : Interactive programs in Haskell (some stuff not in textbook)
-
-    Week 12 : More on interactive programs in Haskell (not in textbook)
-
-    Week 12 : Data sharing in functional languages (not in textbook)
-
-    Week 13 : Monads and error handling in Haskell (some stuff not in the textbook)
-
-    Week 14 : The FP1 Blooper reel
-
-    Week 14 : “Hitler reacts to functional programming” (a hilarious meme from Youtube)
-
-Additional Haskell information
-
-    The following cheat sheet gives compressed information on Haskell: Haskell Cheat Sheet.
-
-    Documentation for the Haskell Prelude (the “base” that can be used without importing anything): The Haskell Prelude
-
+The original course outline follows *Learn You a Haskell for Great Good!* alongside additional functional programming topics. The committed exercises cover a subset of that outline; the repository does not imply that every planned course topic has a completed implementation.
